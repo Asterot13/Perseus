@@ -51,7 +51,7 @@ namespace Ship
         // Update is called once per frame
         void Update()
         {
-            checkStats();
+           // checkStats();
         }
 
         private void checkStats()
