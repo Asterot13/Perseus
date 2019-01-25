@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Perseus/Assets/EffectExamples.meta
 guid: 6a44c0770b4bd1a4fb107be2528527da
+=======
+guid: d1579afb4855ea3478f9dd07418ddd6e
+>>>>>>> origin/creating_ship:Perseus/Assets/Perseus/Scripts/Interfaces.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
