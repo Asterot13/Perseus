@@ -16,14 +16,23 @@ namespace Ship
         private float max_capacity;
         [SerializeField]
         private float chargeSpeed;
-        [SerializeField]
-        private float dischargeSpeed;
 
         private float currentCharge;
 
-        public void getBroken()
+        [SerializeField]
+        private float max_health;
+        private float health;
+
+        public void getBroken(float damage = 0)
         {
-            throw new System.NotImplementedException();
+            if(currentCharge <= 50f && damage == 0)
+            {
+               //TODO: Battery Needs Fixing
+            }
+            else if(damage > 0)
+            {
+                //TODO: Show the same as above
+            }
         }
 
         public void getDestroyed()
@@ -31,7 +40,7 @@ namespace Ship
             throw new System.NotImplementedException();
         }
 
-        public void getFixed()
+        public void getFixed(float fixingSkill)
         {
             throw new System.NotImplementedException();
         }
@@ -41,9 +50,21 @@ namespace Ship
             throw new System.NotImplementedException();
         }
 
-        public void wearOut()
+        public IEnumerator wearOut()
         {
-            throw new System.NotImplementedException();
+            yield return new WaitForSecondsRealtime(30f);
+
+        }
+
+        public IEnumerator charge()
+        {
+            yield return new WaitForSecondsRealtime(10f);
+            if (currentCharge > max_capacity)
+                currentCharge = max_capacity;
+            else
+            {
+                currentCharge += (_reactor.currentGeneratingPower - _ship.energyConsumption);
+            }
         }
 
 
@@ -56,7 +77,7 @@ namespace Ship
         // Update is called once per frame
         void Update()
         {
-
+            StartCoroutine(charge());
         }
 
 

@@ -474,7 +474,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c4c6d8741ad9c40bf18681a758a2ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  food: 0
-  water: 0
-  medicine: 0
-  oxigen: 0
+  max_shipStrenght: 100
+  max_shipShield: 100
+  max_shieldRestorationSpeed: 5
+  max_energy: 100
+  max_speed: 30
+  max_radiationDefence: 100
+  normalRadiationLevel: 10
+  max_oxigenLevel: 100
+  food: 300
+  water: 300
+  medicine: 100
+  oxigen: 100

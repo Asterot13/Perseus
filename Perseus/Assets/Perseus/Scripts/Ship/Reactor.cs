@@ -7,16 +7,28 @@ namespace Ship
     public class Reactor : MonoBehaviour, IDamageable
     {
         [SerializeField]
+        private Ship _ship;
+        [SerializeField]
         private float max_health;
         [SerializeField]
         private float max_generatingPower;
+        [SerializeField]
+        private float wearoutIndex;
 
-        private float currentGeneratingPower;
+        public float currentGeneratingPower;
         private float health;
 
-        public void getBroken()
+        public void getBroken(float damage = 0)
         {
-            throw new System.NotImplementedException();
+            if(health <= 50f && damage == 0)
+            {
+                //TODO: Enable particles and ui indicators
+            }
+            else if(damage > 0)
+            {
+                health -= damage;
+                //TODO: Enable particles and ui indicators
+            }
         }
 
         public void getDestroyed()
@@ -24,9 +36,12 @@ namespace Ship
             throw new System.NotImplementedException();
         }
 
-        public void getFixed()
+        public void getFixed(float fixingSkill)
         {
-            throw new System.NotImplementedException();
+            if (max_health > health)
+                health += fixingSkill;
+            else
+                print("Object is fixed"); //TODO: Display in UI
         }
 
         public void takeDamage()
@@ -34,21 +49,24 @@ namespace Ship
             throw new System.NotImplementedException();
         }
 
-        public void wearOut()
+        public IEnumerator wearOut()
         {
-            throw new System.NotImplementedException();
+            yield return new WaitForSecondsRealtime(30f);
+            health -= wearoutIndex;
         }
 
         // Use this for initialization
         void Start()
         {
-
+            health = max_health;
+            currentGeneratingPower = max_generatingPower;
         }
 
         // Update is called once per frame
         void Update()
         {
-
+            currentGeneratingPower *= (health / 100);
+            StartCoroutine(wearOut());
         }
     }
 }

@@ -14,7 +14,7 @@ namespace Ship
 
         private float currentHealth;
 
-        public void getBroken()
+        public void getBroken(float damage)
         {
             throw new System.NotImplementedException();
         }
@@ -24,7 +24,7 @@ namespace Ship
             throw new System.NotImplementedException();
         }
 
-        public void getFixed()
+        public void getFixed(float fixingSkill)
         {
             throw new System.NotImplementedException();
         }
@@ -34,9 +34,9 @@ namespace Ship
             throw new System.NotImplementedException();
         }
 
-        public void wearOut()
+        public IEnumerator wearOut()
         {
-            throw new System.NotImplementedException();
+            yield return new WaitForSecondsRealtime(30f);
         }
 
 

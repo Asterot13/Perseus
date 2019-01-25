@@ -22,7 +22,8 @@ namespace Ship
         [SerializeField]
         private float max_radiationDefence;
         [SerializeField]
-        private float noramlRadiationLevel;
+        private float normalRadiationLevel;
+        private float max_oxigenLevel;
 
         private float shipStrenght;
         private float shipShield;
@@ -42,16 +43,19 @@ namespace Ship
         [SerializeField]
         private float oxigen;
 
+        public float energyConsumption = 10f;
+
         // Use this for initialization
         void Start()
         {
+            shipStrenght = max_shipStrenght;
 
         }
 
         // Update is called once per frame
         void Update()
         {
-           // checkStats();
+            checkStats();
         }
 
         private void checkStats()
