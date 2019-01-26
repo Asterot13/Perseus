@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PersonStats : MonoBehaviour {
+    public Animator anim;
+
     public float hunger;
     public float thirst;
     public float energy;
@@ -15,9 +17,11 @@ public class PersonStats : MonoBehaviour {
 
     public bool idle;
     public bool walk;
+    public bool run;
     public bool sleep;
     public bool work;
     public bool interact;
+    public bool inSpace;
 
     private bool setChanges = true;
     private int maxHunger = 100;
@@ -89,6 +93,12 @@ public class PersonStats : MonoBehaviour {
             Debug.Log("Персонаж" + gameObject.name + " умер от ран");
             Destroy(gameObject);
         }
+    }
+
+    void Start()
+    {
+        anim = gameObject.GetComponent<Animator>();
+        idle = true;
     }
 
     void Update()
