@@ -22,6 +22,14 @@ namespace Ship
         private bool isWearingOut = true;
         private bool isAccelerating;
 
+        public bool isBurning;
+
+        public bool isOnFire
+        {
+            get { return isOnFire; }
+            set { isBurning = isOnFire; }
+        }
+
         [SerializeField]
         private float wearingOutIndex;
 
@@ -69,7 +77,7 @@ namespace Ship
         {
             isWearingOut = false;
             yield return new WaitForSecondsRealtime(5f);
-            health -= wearingOutIndex * (isAccelerating ? acceleration : 1);
+            health -= (wearingOutIndex * (isBurning ? 1.5f : 1)) * (isAccelerating ? acceleration : 1);
             isWearingOut = true;
         }
 

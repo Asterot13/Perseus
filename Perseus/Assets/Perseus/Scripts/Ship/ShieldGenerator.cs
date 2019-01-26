@@ -21,8 +21,16 @@ namespace Ship
         [SerializeField]
         private float chargeSpeed;
         private float chargeRequest = 5f;
-
+        public float wearoutIndex;
         private float health;
+
+        public bool isBurning;
+
+        public bool isOnFire
+        {
+            get { return isOnFire; }
+            set { isBurning = isOnFire; }
+        }
 
         public void getBroken(float damage)
         {
@@ -58,7 +66,7 @@ namespace Ship
         {
             isWearingOut = false;
             yield return new WaitForSecondsRealtime(5f);
-            health -= wearingOutIndex;
+            health -= wearoutIndex * (isBurning ? 1.5f : 1); ;
             isWearingOut = true;
         }
 
@@ -88,6 +96,11 @@ namespace Ship
                 StartCoroutine(wearOut());
             if (isCharging)
                 StartCoroutine(charge());
+        }
+
+        public void damageByMeteor(float damage)
+        {
+            _ship.shipShield -= damage;
         }
     }
 }

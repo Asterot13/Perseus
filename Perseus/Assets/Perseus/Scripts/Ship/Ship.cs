@@ -40,8 +40,7 @@ namespace Ship
         private float shieldRestorationSpeed;
         public float energy;
         public float speed;
-        private float radiationDefence;
-        private float currentRadiationLevel;
+        public float currentRadiationLevel;
 
         //SHIP STORE
         [SerializeField]

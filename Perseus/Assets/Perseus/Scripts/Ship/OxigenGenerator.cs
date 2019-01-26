@@ -20,6 +20,14 @@ namespace Ship
         private float wearingOutIndex;
         [SerializeField]
         private float restoreSpeed;
+        public float wearoutIndex;
+        public bool isBurning;
+
+        public bool isOnFire
+        {
+            get { return isOnFire; }
+            set { isBurning = isOnFire; }
+        }
 
         public void getBroken(float damage)
         {
@@ -55,7 +63,7 @@ namespace Ship
         {
             isWearingOut = false;
             yield return new WaitForSecondsRealtime(5f);
-            health -= wearingOutIndex;
+            health -= wearoutIndex * (isBurning ? 1.5f : 1);
             isWearingOut = true;
         }
 

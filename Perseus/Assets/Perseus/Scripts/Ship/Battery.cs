@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 namespace Ship
 {
     public class Battery : MonoBehaviour, IDamageable
@@ -23,6 +22,14 @@ namespace Ship
         private float max_health;
         [SerializeField]
         private float health;
+        public float wearoutIndex;
+        public bool isBurning;
+
+        public bool isOnFire
+        {
+            get { return isOnFire; }
+            set { isBurning = isOnFire; }
+        }
 
         public void getBroken(float damage = 0)
         {
@@ -63,7 +70,7 @@ namespace Ship
         public IEnumerator wearOut()
         {
             yield return new WaitForSecondsRealtime(30f);
-            health -= 5f;
+            health -= wearoutIndex * (isBurning ? 1.5f : 1); ;
         }
 
         public IEnumerator charge()

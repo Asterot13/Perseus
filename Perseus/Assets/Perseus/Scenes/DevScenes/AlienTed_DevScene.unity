@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18530264, g: 0.22567552, b: 0.19359568, a: 1}
+  m_IndirectSpecularColor: {r: 0.18924603, g: 0.23069686, b: 0.19788843, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -157,6 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ship: {fileID: 1958784499}
   max_health: 100
+  health: 0
   wearingOutIndex: 2
 --- !u!1 &568848632
 GameObject:
@@ -637,6 +638,7 @@ GameObject:
   - component: {fileID: 1958784496}
   - component: {fileID: 1958784495}
   - component: {fileID: 1958784499}
+  - component: {fileID: 1958784500}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -706,8 +708,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1958784494}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.0033566072, y: -0.08752063, z: 0.061573036, w: 0.9942523}
+  m_LocalPosition: {x: -0.087091714, y: -0.013141632, z: -0.016217947}
   m_LocalScale: {x: 1.5, y: 1, z: 4}
   m_Children:
   - {fileID: 1431327535}
@@ -715,7 +717,7 @@ Transform:
   - {fileID: 70086932}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1, y: -10, z: 7}
 --- !u!114 &1958784499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -727,8 +729,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c4c6d8741ad9c40bf18681a758a2ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MAIN_DISTANCE: 600
   currentDistance: 0
+  MAIN_TIME: 1800
   remainingTime: 0
+  normalRotation: {x: 0, y: 0, z: 0, w: 0}
+  disruptedRotation: {x: 0.0033565853, y: -0.08752057, z: 0.061573066, w: 0.99425226}
   max_shipStrenght: 100
   max_shipShield: 100
   max_shieldRestorationSpeed: 5
@@ -736,6 +742,7 @@ MonoBehaviour:
   max_speed: 30
   max_radiationDefence: 100
   normalRadiationLevel: 10
+  shipShield: 0
   energy: 0
   speed: 0
   food: 300
@@ -743,3 +750,18 @@ MonoBehaviour:
   medicine: 100
   oxigen: 100
   energyConsumption: 10
+--- !u!114 &1958784500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1958784494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f695472dde54d84aa7a23399a1d1854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePrc: 0
+  damagePrc: 0
+  customPrc: 0
+  shipObjectsList: []
