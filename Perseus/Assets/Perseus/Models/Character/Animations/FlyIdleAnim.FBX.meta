@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: 647c0c90ea7defc4cbf441c91bff7c44
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Base CosmoWomanHead
+    100002: Base CosmoWomanLCalf
+    100004: Base CosmoWomanLCollarbone
+    100006: Base CosmoWomanLDigit11
+    100008: Base CosmoWomanLDigit11 1
+    100010: Base CosmoWomanLDigit12
+    100012: Base CosmoWomanLDigit13
+    100014: Base CosmoWomanLDigit21
+    100016: Base CosmoWomanLDigit22
+    100018: Base CosmoWomanLDigit23
+    100020: Base CosmoWomanLDigit31
+    100022: Base CosmoWomanLDigit32
+    100024: Base CosmoWomanLDigit33
+    100026: Base CosmoWomanLDigit41
+    100028: Base CosmoWomanLDigit42
+    100030: Base CosmoWomanLDigit43
+    100032: Base CosmoWomanLDigit51
+    100034: Base CosmoWomanLDigit52
+    100036: Base CosmoWomanLDigit53
+    100038: Base CosmoWomanLFoot
+    100040: Base CosmoWomanLForearm
+    100042: Base CosmoWomanLPalm
+    100044: Base CosmoWomanLThigh
+    100046: Base CosmoWomanLUpperarm
+    100048: Base CosmoWomanNeck
+    100050: Base CosmoWomanPelvis
+    100052: Base CosmoWomanRCalf
+    100054: Base CosmoWomanRCollarbone
+    100056: Base CosmoWomanRDigit11
+    100058: Base CosmoWomanRDigit11 1
+    100060: Base CosmoWomanRDigit12
+    100062: Base CosmoWomanRDigit13
+    100064: Base CosmoWomanRDigit21
+    100066: Base CosmoWomanRDigit22
+    100068: Base CosmoWomanRDigit23
+    100070: Base CosmoWomanRDigit31
+    100072: Base CosmoWomanRDigit32
+    100074: Base CosmoWomanRDigit33
+    100076: Base CosmoWomanRDigit41
+    100078: Base CosmoWomanRDigit42
+    100080: Base CosmoWomanRDigit43
+    100082: Base CosmoWomanRDigit51
+    100084: Base CosmoWomanRDigit52
+    100086: Base CosmoWomanRDigit53
+    100088: Base CosmoWomanRFoot
+    100090: Base CosmoWomanRForearm
+    100092: Base CosmoWomanRibcage
+    100094: Base CosmoWomanRPalm
+    100096: Base CosmoWomanRThigh
+    100098: Base CosmoWomanRUpperarm
+    100100: Base CosmoWomanSpine1
+    100102: Base CosmoWomanSpine2
+    100104: Base CosmoWomanSpine3
+    100106: Base CosmoWomanSpine4
+    100108: //RootNode
+    400000: Base CosmoWomanHead
+    400002: Base CosmoWomanLCalf
+    400004: Base CosmoWomanLCollarbone
+    400006: Base CosmoWomanLDigit11
+    400008: Base CosmoWomanLDigit11 1
+    400010: Base CosmoWomanLDigit12
+    400012: Base CosmoWomanLDigit13
+    400014: Base CosmoWomanLDigit21
+    400016: Base CosmoWomanLDigit22
+    400018: Base CosmoWomanLDigit23
+    400020: Base CosmoWomanLDigit31
+    400022: Base CosmoWomanLDigit32
+    400024: Base CosmoWomanLDigit33
+    400026: Base CosmoWomanLDigit41
+    400028: Base CosmoWomanLDigit42
+    400030: Base CosmoWomanLDigit43
+    400032: Base CosmoWomanLDigit51
+    400034: Base CosmoWomanLDigit52
+    400036: Base CosmoWomanLDigit53
+    400038: Base CosmoWomanLFoot
+    400040: Base CosmoWomanLForearm
+    400042: Base CosmoWomanLPalm
+    400044: Base CosmoWomanLThigh
+    400046: Base CosmoWomanLUpperarm
+    400048: Base CosmoWomanNeck
+    400050: Base CosmoWomanPelvis
+    400052: Base CosmoWomanRCalf
+    400054: Base CosmoWomanRCollarbone
+    400056: Base CosmoWomanRDigit11
+    400058: Base CosmoWomanRDigit11 1
+    400060: Base CosmoWomanRDigit12
+    400062: Base CosmoWomanRDigit13
+    400064: Base CosmoWomanRDigit21
+    400066: Base CosmoWomanRDigit22
+    400068: Base CosmoWomanRDigit23
+    400070: Base CosmoWomanRDigit31
+    400072: Base CosmoWomanRDigit32
+    400074: Base CosmoWomanRDigit33
+    400076: Base CosmoWomanRDigit41
+    400078: Base CosmoWomanRDigit42
+    400080: Base CosmoWomanRDigit43
+    400082: Base CosmoWomanRDigit51
+    400084: Base CosmoWomanRDigit52
+    400086: Base CosmoWomanRDigit53
+    400088: Base CosmoWomanRFoot
+    400090: Base CosmoWomanRForearm
+    400092: Base CosmoWomanRibcage
+    400094: Base CosmoWomanRPalm
+    400096: Base CosmoWomanRThigh
+    400098: Base CosmoWomanRUpperarm
+    400100: Base CosmoWomanSpine1
+    400102: Base CosmoWomanSpine2
+    400104: Base CosmoWomanSpine3
+    400106: Base CosmoWomanSpine4
+    400108: //RootNode
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
