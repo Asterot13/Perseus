@@ -77,5 +77,14 @@ public class MainMenu : MonoBehaviour {
         }
     }
 
+    private void OnMouseEnter()
+    {
+        
+    }
+
+    private void OnMouseExit()
+    {
+        
+    }
 
 }

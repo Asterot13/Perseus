@@ -3,8 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using UnityEngine.EventSystems;
 
-public class MenuCharacter : MonoBehaviour {
+public class MenuCharacter : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
 
 
     public bool isSelected;
@@ -13,11 +15,18 @@ public class MenuCharacter : MonoBehaviour {
     public int id;
     public Sprite selectedSprite;
     public Sprite unselectedSprite;
+    public string profileInfo;
+
+    [SerializeField]
+    private GameObject profile;
+    [SerializeField]
+    private TextMeshProUGUI profileName;
+    [SerializeField]
+    private TextMeshProUGUI info;
 
     public void Start()
     {
         isSelected = false;
-
     }
 
     public void hideActiveImage()
@@ -28,6 +37,18 @@ public class MenuCharacter : MonoBehaviour {
     public void showActiveImage()
     {
         GetComponent<Button>().image.sprite = selectedSprite;
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        profileName.text = name;
+        info.text = profileInfo;
+        profile.SetActive(true);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        profile.SetActive(false);
     }
 }
 
