@@ -16,23 +16,30 @@ namespace Ship
         private float max_capacity;
         [SerializeField]
         private float chargeSpeed;
-
+        [SerializeField]
         private float currentCharge;
-
+        private bool isCharging = true;
         [SerializeField]
         private float max_health;
+        [SerializeField]
         private float health;
 
         public void getBroken(float damage = 0)
         {
-            if(currentCharge <= 50f && damage == 0)
+            if(health <= 50f && damage == 0)
             {
                //TODO: Battery Needs Fixing
             }
-            else if(damage > 0)
+            else if(damage > 0 && health <= 50f)
             {
                 //TODO: Show the same as above
             }
+        }
+
+        public float getSomeCharge(float request)
+        {
+            currentCharge -= request;
+            return request;
         }
 
         public void getDestroyed()
@@ -42,7 +49,10 @@ namespace Ship
 
         public void getFixed(float fixingSkill)
         {
-            throw new System.NotImplementedException();
+            if (max_health > health)
+                health += fixingSkill;
+            else
+                print("Object is fixed"); //TODO: Display in UI
         }
 
         public void takeDamage()
@@ -53,31 +63,36 @@ namespace Ship
         public IEnumerator wearOut()
         {
             yield return new WaitForSecondsRealtime(30f);
-
+            health -= 5f;
         }
 
         public IEnumerator charge()
         {
-            yield return new WaitForSecondsRealtime(10f);
+            isCharging = false;
+            yield return new WaitForSecondsRealtime(chargeSpeed);
             if (currentCharge > max_capacity)
                 currentCharge = max_capacity;
             else
             {
-                currentCharge += (_reactor.currentGeneratingPower - _ship.energyConsumption);
+                currentCharge += ((_reactor.currentGeneratingPower) - _ship.energyConsumption);
             }
+            isCharging = true;
         }
 
 
         // Use this for initialization
         void Start()
         {
-
+            health = max_health;
+            currentCharge = max_capacity;
         }
 
         // Update is called once per frame
         void Update()
         {
-            StartCoroutine(charge());
+            _ship.energy = currentCharge;
+            if(isCharging)
+                StartCoroutine(charge());
         }
 
 
