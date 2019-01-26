@@ -25,7 +25,7 @@ namespace Ship
         private bool isFixed;
         public bool isOnFire
         {
-            get {  return isOnFire; }
+            get {  return isBurning; }
             set { isBurning = isOnFire;  }
         }
 
@@ -95,6 +95,7 @@ namespace Ship
         {
             health = max_health;
             currentGeneratingPower = max_generatingPower/10;
+            isOnFire = false;
         }
 
         // Update is called once per frame
