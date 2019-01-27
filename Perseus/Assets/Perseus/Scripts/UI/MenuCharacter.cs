@@ -21,6 +21,7 @@ public class MenuCharacter : MonoBehaviour {
     public void Start()
     {
         isSelected = false;
+        GetComponent<Button>().image.sprite = unselectedSprite;
     }
 
     public void hideActiveImage()

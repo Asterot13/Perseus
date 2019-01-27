@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour {
     public GameObject mainSection;
     public GameObject characterSection;
     public GameObject startLevelButton;
-    private List<MenuCharacter> selectedCharacters = new List<MenuCharacter>();
+    public List<MenuCharacter> selectedCharacters = new List<MenuCharacter>();
     [SerializeField]
     private List<MenuCharacter> characters = new List<MenuCharacter>();
 

@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -880.0259, y: -0.000015258789}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -0.0006942749, y: 130.15}
+  m_SizeDelta: {x: -0.3, y: -259.77}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &547883251
 CanvasRenderer:
@@ -65,7 +65,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Button
+  m_text: BIOLOGIST
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 547883250}
-    characterCount: 6
+    characterCount: 9
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -218,7 +218,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0}
@@ -277,11 +277,12 @@ MonoBehaviour:
   name: BIOLOG
   specialization: 4
   id: 4
-  selectedSprite: {fileID: 0}
-  unselectedSprite: {fileID: 0}
+  selectedSprite: {fileID: 21300000, guid: e92097660039ec640adc20f2225e2a2c, type: 3}
+  unselectedSprite: {fileID: 21300000, guid: bb928e0fb9a75e0418899f774f665d9e, type: 3}
   profileInfo: 
-  inGameImage: {fileID: 0}
-  playerPref: {fileID: 0}
+  inGameImage: {fileID: 21300000, guid: 2c7e6a36d9d9aff46a066d9959e16987, type: 3}
+  playerPref: {fileID: 1605523285109194182, guid: 06ba30a9423cfcc40b22285d3dc21197,
+    type: 3}
 --- !u!114 &114711859060266700
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -660.0194, y: -0.000015258789}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: 129.99998}
+  m_SizeDelta: {x: 0, y: -260.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &980998121
 CanvasRenderer:
@@ -65,7 +65,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Button
+  m_text: PHYSICIST
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 980998120}
-    characterCount: 6
+    characterCount: 9
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -292,7 +292,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0}
@@ -351,11 +351,12 @@ MonoBehaviour:
   name: PHYSIC
   specialization: 3
   id: 3
-  selectedSprite: {fileID: 0}
-  unselectedSprite: {fileID: 0}
+  selectedSprite: {fileID: 21300000, guid: 847170d801ace4145a920be930c54315, type: 3}
+  unselectedSprite: {fileID: 21300000, guid: 83903b3f0efb0f245b83515f30a3ae34, type: 3}
   profileInfo: 
-  inGameImage: {fileID: 0}
-  playerPref: {fileID: 0}
+  inGameImage: {fileID: 21300000, guid: 1a850b9dced0c7b4e9238b20d95bb961, type: 3}
+  playerPref: {fileID: 1605523285109194182, guid: c3367fa26a894a4409ae2b0788e62562,
+    type: 3}
 --- !u!114 &114887023363487758
 MonoBehaviour:
   m_ObjectHideFlags: 0
