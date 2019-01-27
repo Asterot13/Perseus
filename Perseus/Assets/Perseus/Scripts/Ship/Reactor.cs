@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Events;
 namespace Ship
 {
     public class Reactor : MonoBehaviour, IDamageable
@@ -29,6 +29,11 @@ namespace Ship
             set { isBurning = isOnFire;  }
         }
 
+
+        public GameObject explosion;
+        public GameObject fire;
+        public GameObject _break;
+
         public void getBroken(float damage = 0)
         {
             if(health <= 50f && damage == 0)
@@ -44,9 +49,13 @@ namespace Ship
             }
         }
 
-        public void getDestroyed()
+        public IEnumerator getDestroyed()
         {
-            throw new System.NotImplementedException();
+            explosion.SetActive(true);
+            explosion.GetComponent<ParticleSystem>().Play();
+            yield return new WaitForSeconds(2f);
+            FindObjectOfType<EventLaucher>().shipObjectsList.Remove(gameObject);
+            Destroy(gameObject);
         }
 
         public void getFixed(float fixingSkill)
@@ -107,6 +116,8 @@ namespace Ship
                 StartCoroutine(emitRadiation());
             if (isFixed && _ship.currentRadiationLevel > 0)
                 StartCoroutine(lowerRadiation());
+            if (health <= 0)
+                StartCoroutine(getDestroyed());
         }
     }
 }

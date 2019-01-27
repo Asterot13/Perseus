@@ -44,7 +44,7 @@ namespace Ship
             }
         }
 
-        public void getDestroyed()
+        public IEnumerator getDestroyed()
         {
             throw new System.NotImplementedException();
         }

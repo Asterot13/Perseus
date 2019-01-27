@@ -41,8 +41,8 @@ public class PersonController : MonoBehaviour {
         else if (playersAgent.hasPath && !playerStats.interact)
         {
             playerStats.idle = false;
-            playerStats.walk = true;
-            playerStats.run = false;
+            playerStats.walk = false;
+            playerStats.run = true;
             //playersAgent.speed = 0.90f;
         }
         else if (!playersAgent.hasPath && playerStats.interact)

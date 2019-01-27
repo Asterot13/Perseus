@@ -55,7 +55,7 @@ namespace Ship
             isAccelerating = OnOff;
         }
 
-        public void getDestroyed()
+        public IEnumerator getDestroyed()
         {
             throw new System.NotImplementedException();
         }

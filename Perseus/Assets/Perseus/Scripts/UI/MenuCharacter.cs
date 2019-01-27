@@ -16,6 +16,7 @@ public class MenuCharacter : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public Sprite selectedSprite;
     public Sprite unselectedSprite;
     public string profileInfo;
+    public Sprite inGameImage;
 
     [SerializeField]
     private GameObject profile;

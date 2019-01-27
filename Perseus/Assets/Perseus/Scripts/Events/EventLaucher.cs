@@ -23,7 +23,7 @@ namespace Events
         {
             eventInstances.Add(new EventInstance { eventType = EventType.Fire, fromPrc = fireFromPrc, toPrc = fireToPrc });
             eventInstances.Add(new EventInstance { eventType = EventType.Damage, fromPrc = damageFromPrc, toPrc = damageToPrc });
-            eventInstances.Add(new EventInstance { eventType = EventType.Custom, fromPrc = customFromPrc, toPrc = customerToPrc });
+            //eventInstances.Add(new EventInstance { eventType = EventType.Custom, fromPrc = customFromPrc, toPrc = customerToPrc });
             InvokeRepeating("LaunchEvent", 10f, 300f);
         }
 
@@ -36,9 +36,9 @@ namespace Events
 
             switch(eventToLaunch.eventType)
             {
-                case EventType.Custom:
-                    shipEvent.callCustomEvent(shipObjectsList[objectIndex]);
-                    break;
+                //case EventType.Custom:
+                //    shipEvent.callCustomEvent(shipObjectsList[objectIndex]);
+                //    break;
                 case EventType.Damage:
                     shipEvent.damage(shipObjectsList[objectIndex].GetComponent<IDamageable>());
                     break;

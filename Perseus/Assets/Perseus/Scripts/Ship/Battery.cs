@@ -49,7 +49,7 @@ namespace Ship
             return request;
         }
 
-        public void getDestroyed()
+        public IEnumerator getDestroyed()
         {
             throw new System.NotImplementedException();
         }

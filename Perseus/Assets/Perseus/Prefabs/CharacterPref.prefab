@@ -2029,6 +2029,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JetPack
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010823978654, guid: 2692391ad44c5eb47a61820716784f72, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010409153280, guid: 2692391ad44c5eb47a61820716784f72, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.028940974
@@ -2178,6 +2182,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BloodStreamEffect
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010675638318, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012961768668, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.315
@@ -2289,6 +2297,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WelderPref
+      objectReference: {fileID: 0}
+    - target: {fileID: 3528502434182713930, guid: 438e43f28ad18f042a8d282b8ec31e20,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3528502434182221418, guid: 438e43f28ad18f042a8d282b8ec31e20,
         type: 3}
