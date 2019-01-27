@@ -10,9 +10,11 @@ public class PersonController : MonoBehaviour {
     Interactable interObject;
     Animator anim;
 
-    public float baseStepHunger;
-    public float baseStepThirst;
-    public float baseStepEnergy;
+    float baseStepHunger;
+    float baseStepThirst;
+    float baseStepEnergy;
+
+    public bool isActive;
 
     void Start()
     {
@@ -27,29 +29,32 @@ public class PersonController : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(1) && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
+        if (isActive)
         {
-            GetInteraction();
-        }
+            if (Input.GetMouseButtonDown(1) && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
+            {
+                GetInteraction();
+            }
 
-        if (!playersAgent.hasPath && !playerStats.interact)
-        {
-            playerStats.idle = true;
-            playerStats.walk = false;
-            playerStats.run = false;
-        }
-        else if (playersAgent.hasPath && !playerStats.interact)
-        {
-            playerStats.idle = false;
-            playerStats.walk = true;
-            playerStats.run = false;
-            //playersAgent.speed = 0.90f;
-        }
-        else if (!playersAgent.hasPath && playerStats.interact)
-        {
-            playerStats.idle = false;
-            playerStats.walk = false;
-            playerStats.run = false;
+            if (!playersAgent.hasPath && !playerStats.interact)
+            {
+                playerStats.idle = true;
+                playerStats.walk = false;
+                playerStats.run = false;
+            }
+            else if (playersAgent.hasPath && !playerStats.interact)
+            {
+                playerStats.idle = false;
+                playerStats.walk = true;
+                playerStats.run = false;
+                //playersAgent.speed = 0.90f;
+            }
+            else if (!playersAgent.hasPath && playerStats.interact)
+            {
+                playerStats.idle = false;
+                playerStats.walk = false;
+                playerStats.run = false;
+            }
         }
     }
 
