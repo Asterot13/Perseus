@@ -14825,75 +14825,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 965135951}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &969759602
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7916676598965215735, guid: 3648677ecb48e3f43acabf916e395266,
-        type: 3}
-      propertyPath: m_Name
-      value: Meteor
-      objectReference: {fileID: 0}
-    - target: {fileID: 7916676598965215732, guid: 3648677ecb48e3f43acabf916e395266,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -39.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7916676598965215732, guid: 3648677ecb48e3f43acabf916e395266,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 7916676598965215732, guid: 3648677ecb48e3f43acabf916e395266,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7916676598965215732, guid: 3648677ecb48e3f43acabf916e395266,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.70078987
-      objectReference: {fileID: 0}
-    - target: {fileID: 7916676598965215732, guid: 3648677ecb48e3f43acabf916e395266,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.09430587
-      objectReference: {fileID: 0}
-    - target: {fileID: 7916676598965215732, guid: 3648677ecb48e3f43acabf916e395266,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.0943059
-      objectReference: {fileID: 0}
-    - target: {fileID: 7916676598965215732, guid: 3648677ecb48e3f43acabf916e395266,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.70078987
-      objectReference: {fileID: 0}
-    - target: {fileID: 7916676598965215732, guid: 3648677ecb48e3f43acabf916e395266,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 7916676598965215732, guid: 3648677ecb48e3f43acabf916e395266,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -105.328995
-      objectReference: {fileID: 0}
-    - target: {fileID: 7916676598965215732, guid: 3648677ecb48e3f43acabf916e395266,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 7916676598965215732, guid: 3648677ecb48e3f43acabf916e395266,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 89.99999
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3648677ecb48e3f43acabf916e395266, type: 3}
 --- !u!1001 &980755104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17851,7 +17782,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 11c4359ae4ca13444a2a5dbe15f618c8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1abf165d0fbe559459517ac9905efabb, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.672
   m_Pitch: 1
