@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 1553517340}
   - component: {fileID: 5410255720867878931}
   - component: {fileID: 5977126976314927546}
+  - component: {fileID: 6743632658491623064}
+  - component: {fileID: 6890362172415667530}
   m_Layer: 0
   m_Name: MedicSotage
-  m_TagString: Untagged
+  m_TagString: InteractableObj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5916136061131063517}
-  m_LocalRotation: {x: -0.5528065, y: 0.4409139, z: 0.4409139, w: 0.5528065}
+  m_LocalRotation: {x: -0.55280703, y: 0.44091314, z: 0.44091314, w: 0.55280703}
   m_LocalPosition: {x: -81.20126, y: 61.619595, z: 111.72031}
   m_LocalScale: {x: 1.472639, y: 1.4726392, z: 1.4726387}
   m_Children:
@@ -80,6 +82,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6743632658491623064
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5916136061131063517}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.48329583, y: 0.3370345, z: 0.66138154}
+  m_Center: {x: -0.00000333786, y: -0.0000023767352, z: -0.000004053116}
+--- !u!114 &6890362172415667530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5916136061131063517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf976ebbd5a6aa64d835bf92c48b6974, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAgent: {fileID: 0}
+  playerStats: {fileID: 0}
+  anim: {fileID: 0}
+  medHelp: 20
+  coroutineTime: 3
 --- !u!1001 &144847421
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -134,18 +166,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 19cf2591d64ba0f43b257f662e1db5a1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 19cf2591d64ba0f43b257f662e1db5a1, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 19cf2591d64ba0f43b257f662e1db5a1, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 19cf2591d64ba0f43b257f662e1db5a1, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 19cf2591d64ba0f43b257f662e1db5a1, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -214,14 +234,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -21.586
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 19cf2591d64ba0f43b257f662e1db5a1, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 19cf2591d64ba0f43b257f662e1db5a1, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 19cf2591d64ba0f43b257f662e1db5a1, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -288,18 +300,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 19cf2591d64ba0f43b257f662e1db5a1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 19cf2591d64ba0f43b257f662e1db5a1, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 19cf2591d64ba0f43b257f662e1db5a1, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 19cf2591d64ba0f43b257f662e1db5a1, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 19cf2591d64ba0f43b257f662e1db5a1, type: 3}
       propertyPath: m_Materials.Array.data[0]
