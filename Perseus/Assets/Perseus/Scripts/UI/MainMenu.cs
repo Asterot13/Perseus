@@ -56,7 +56,7 @@ public class MainMenu : MonoBehaviour {
 
     public void startLevel()
     {
-        SceneManager.LoadScene(""); //TODO: ADD LEVEL
+        SceneManager.LoadScene("SpaceShip 1"); //TODO: ADD LEVEL
     }
 
 
