@@ -150,14 +150,42 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -197,7 +225,292 @@ ModelImporter:
   humanDescription:
     serializedVersion: 2
     human: []
-    skeleton: []
+    skeleton:
+    - name: CharacterTest(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Base CosmoWomanPelvis
+      parentName: CharacterTest(Clone)
+      position: {x: 3.0873387e-10, y: 0.9379884, z: 0.005482956}
+      rotation: {x: 0.49912703, y: -0.50087154, z: -0.49912694, w: 0.5008715}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Base CosmoWomanLThigh
+      parentName: Base CosmoWomanPelvis
+      position: {x: -0.01703903, y: 0.046458814, z: 0.08705284}
+      rotation: {x: 0.013898193, y: 0.99825037, z: -0.010676518, w: 0.05647252}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Base CosmoWomanLCalf
+      parentName: Base CosmoWomanLThigh
+      position: {x: -0.4376525, y: -0.00000004529953, z: 0.0000001335144}
+      rotation: {x: 0.0033330696, y: 0.040913865, z: 0.11287059, w: 0.99276143}
+      scale: {x: 1.0000013, y: 0.9999993, z: 0.9999998}
+    - name: Base CosmoWomanLFoot
+      parentName: Base CosmoWomanLCalf
+      position: {x: -0.4820241, y: 0.000000009536743, z: 0}
+      rotation: {x: -0.01682347, y: 0.006259005, z: -0.78459245, w: 0.619752}
+      scale: {x: 1.0000005, y: 0.9999993, z: 1.0000005}
+    - name: Base CosmoWomanLDigit11
+      parentName: Base CosmoWomanLFoot
+      position: {x: -0.17847072, y: 0, z: 0.000000009536743}
+      rotation: {x: -0.00021335868, y: 0.0006388866, z: -0.00885872, w: 0.99996054}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999998}
+    - name: Base CosmoWomanRThigh
+      parentName: Base CosmoWomanPelvis
+      position: {x: -0.01703903, y: 0.046458814, z: -0.08705284}
+      rotation: {x: 0.013901445, y: 0.99825037, z: 0.010675628, w: -0.056471433}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: Base CosmoWomanRCalf
+      parentName: Base CosmoWomanRThigh
+      position: {x: -0.4376525, y: -0.000000052452087, z: -0.0000001335144}
+      rotation: {x: -0.0033497636, y: -0.040949404, z: 0.11299924, w: 0.9927453}
+      scale: {x: 1.0000005, y: 1, z: 1.0000002}
+    - name: Base CosmoWomanRFoot
+      parentName: Base CosmoWomanRCalf
+      position: {x: -0.48202407, y: -0.000000019073486, z: -0.000000019073486}
+      rotation: {x: 0.01695254, y: -0.0061119255, z: -0.7845794, w: 0.6197664}
+      scale: {x: 1.0000001, y: 0.9999997, z: 1}
+    - name: Base CosmoWomanRDigit11
+      parentName: Base CosmoWomanRFoot
+      position: {x: -0.17847076, y: -0.0000000047683715, z: -0.000000009536743}
+      rotation: {x: 0.00021495276, y: -0.0008298295, z: -0.009010841, w: 0.99995905}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Base CosmoWomanSpine1
+      parentName: Base CosmoWomanPelvis
+      position: {x: -0.031655274, y: -0.0035079229, z: -0.00000000834465}
+      rotation: {x: 0.00000000918154, y: -0.000000050858247, z: -0.15687403, w: 0.9876186}
+      scale: {x: 1.0000005, y: 1.0000006, z: 1}
+    - name: Base CosmoWomanSpine2
+      parentName: Base CosmoWomanSpine1
+      position: {x: -0.10641685, y: -0.000000019073486, z: 0}
+      rotation: {x: 0.0000000058626846, y: -0.000000035477424, z: 0.12706588, w: 0.9918943}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000001}
+    - name: Base CosmoWomanSpine3
+      parentName: Base CosmoWomanSpine2
+      position: {x: -0.108392484, y: 0.0000000023841857, z: 0}
+      rotation: {x: -0.000000001604652, y: 0.00000006303598, z: 0.09532666, w: 0.9954461}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Base CosmoWomanSpine4
+      parentName: Base CosmoWomanSpine3
+      position: {x: -0.09988098, y: 0, z: 0}
+      rotation: {x: -3.0963085e-10, y: -0.000000006575553, z: -0.0741293, w: 0.99724865}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Base CosmoWomanRibcage
+      parentName: Base CosmoWomanSpine4
+      position: {x: -0.13459289, y: -0.0000000011920929, z: 0}
+      rotation: {x: 0.000000004373358, y: 0.0000008642483, z: -0.42459396, w: 0.9053839}
+      scale: {x: 0.9999991, y: 0.999999, z: 0.9999999}
+    - name: Base CosmoWomanLCollarbone
+      parentName: Base CosmoWomanRibcage
+      position: {x: 0.00800003, y: 0.0337158, z: 0.029180221}
+      rotation: {x: -0.022500569, y: 0.72098464, z: 0.0961146, w: 0.685884}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Base CosmoWomanLUpperarm
+      parentName: Base CosmoWomanLCollarbone
+      position: {x: -0.13264106, y: -0.000000019073486, z: 0.00000015258789}
+      rotation: {x: -0.19239363, y: 0.019550676, z: -0.044573635, w: 0.98011005}
+      scale: {x: 1.0000002, y: 0.9999999, z: 0.9999999}
+    - name: Base CosmoWomanLForearm
+      parentName: Base CosmoWomanLUpperarm
+      position: {x: -0.21561272, y: -0.000000076293944, z: 0}
+      rotation: {x: -0.07766981, y: -0.00036058936, z: -0.040179238, w: 0.9961692}
+      scale: {x: 1.0000001, y: 1.0000029, z: 0.9999974}
+    - name: Base CosmoWomanLPalm
+      parentName: Base CosmoWomanLForearm
+      position: {x: -0.18249147, y: 0, z: 0}
+      rotation: {x: -0.41287744, y: 0.017056353, z: 0.031619165, w: 0.91007775}
+      scale: {x: 0.99999994, y: 0.9999997, z: 1.0000002}
+    - name: Base CosmoWomanLDigit11 1
+      parentName: Base CosmoWomanLPalm
+      position: {x: -0.04965191, y: -0.010263672, z: 0.032958306}
+      rotation: {x: 0.63917315, y: 0.21559304, z: -0.22845905, w: 0.70198566}
+      scale: {x: 1.0000012, y: 0.9999996, z: 0.99999946}
+    - name: Base CosmoWomanLDigit12
+      parentName: Base CosmoWomanLDigit11 1
+      position: {x: -0.028540496, y: 0.000000038146972, z: 0.000000076293944}
+      rotation: {x: -0.0000028312197, y: 0.0000011324878, z: 0.040805317, w: 0.99916714}
+      scale: {x: 1.000001, y: 0.9999998, z: 0.9999994}
+    - name: Base CosmoWomanLDigit13
+      parentName: Base CosmoWomanLDigit12
+      position: {x: -0.028540496, y: 0.000000076293944, z: 0.00000015258789}
+      rotation: {x: -0.0000038076191, y: 0.000005124763, z: 0.083269306, w: 0.99652714}
+      scale: {x: 1, y: 1.0000007, z: 0.9999994}
+    - name: Base CosmoWomanLDigit21
+      parentName: Base CosmoWomanLPalm
+      position: {x: -0.098243825, y: 0.007853546, z: 0.015940141}
+      rotation: {x: 0.0029297718, y: -0.030238962, z: 0.008864171, w: 0.99949914}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1.0000004}
+    - name: Base CosmoWomanLDigit22
+      parentName: Base CosmoWomanLDigit21
+      position: {x: -0.028540496, y: -0.00000015258789, z: 0.0000001335144}
+      rotation: {x: 0.00000072526717, y: 0.0000012535597, z: 0.04081196, w: 0.9991669}
+      scale: {x: 1.0000006, y: 0.9999995, z: 1.0000005}
+    - name: Base CosmoWomanLDigit23
+      parentName: Base CosmoWomanLDigit22
+      position: {x: -0.028540382, y: 0, z: 0.000000057220458}
+      rotation: {x: 0.0000005145668, y: 0.000002342033, z: 0.0832724, w: 0.99652684}
+      scale: {x: 1.0000017, y: 0.99999833, z: 1.0000004}
+    - name: Base CosmoWomanLDigit31
+      parentName: Base CosmoWomanLPalm
+      position: {x: -0.09281513, y: 0.012229767, z: -0.0000093364715}
+      rotation: {x: 0.0040062657, y: -0.055187743, z: -0.0040351134, w: 0.9984599}
+      scale: {x: 0.99999976, y: 1, z: 1.0000006}
+    - name: Base CosmoWomanLDigit32
+      parentName: Base CosmoWomanLDigit31
+      position: {x: -0.031301804, y: 0, z: -0.0000000667572}
+      rotation: {x: -0.0008624233, y: 0.010677104, z: 0.039276317, w: 0.999171}
+      scale: {x: 1.0000001, y: 0.99999946, z: 1.0000007}
+    - name: Base CosmoWomanLDigit33
+      parentName: Base CosmoWomanLDigit32
+      position: {x: -0.031301763, y: -0.00000015258789, z: 0.000000028610229}
+      rotation: {x: -0.0012726199, y: 0.015277515, z: 0.083157666, w: 0.9964185}
+      scale: {x: 1.0000002, y: 0.9999994, z: 1.0000006}
+    - name: Base CosmoWomanLDigit41
+      parentName: Base CosmoWomanLPalm
+      position: {x: -0.09421066, y: 0.0034371947, z: -0.015776185}
+      rotation: {x: 0.009341831, y: -0.06998959, z: -0.025212662, w: 0.9971853}
+      scale: {x: 0.99999946, y: 1, z: 1.0000007}
+    - name: Base CosmoWomanLDigit42
+      parentName: Base CosmoWomanLDigit41
+      position: {x: -0.028540459, y: -0.00000015258789, z: 0.000000114440915}
+      rotation: {x: 0.001362287, y: 0.0041662813, z: 0.04065493, w: 0.9991637}
+      scale: {x: 1, y: 0.99999946, z: 1.0000008}
+    - name: Base CosmoWomanLDigit43
+      parentName: Base CosmoWomanLDigit42
+      position: {x: -0.028540535, y: -0.000000076293944, z: 0.000000038146972}
+      rotation: {x: 0.0012065576, y: 0.0056555215, z: 0.08179581, w: 0.99663234}
+      scale: {x: 1.0000013, y: 0.9999982, z: 1.0000007}
+    - name: Base CosmoWomanLDigit51
+      parentName: Base CosmoWomanLPalm
+      position: {x: -0.08368107, y: -0.00000015258789, z: -0.03165805}
+      rotation: {x: 0.0035442992, y: -0.07072405, z: -0.029127551, w: 0.9970643}
+      scale: {x: 0.9999994, y: 0.9999999, z: 1.000001}
+    - name: Base CosmoWomanLDigit52
+      parentName: Base CosmoWomanLDigit51
+      position: {x: -0.028540459, y: 0, z: 0.000000114440915}
+      rotation: {x: 0.0000002973246, y: 0.0000012964005, z: 0.04080482, w: 0.99916714}
+      scale: {x: 0.99999994, y: 0.99999946, z: 1.000001}
+    - name: Base CosmoWomanLDigit53
+      parentName: Base CosmoWomanLDigit52
+      position: {x: -0.028540382, y: 0, z: 0.000000028610229}
+      rotation: {x: 0.00000062185256, y: 0.000001952875, z: 0.08327147, w: 0.9965269}
+      scale: {x: 1.0000001, y: 0.9999992, z: 1.000001}
+    - name: Base CosmoWomanNeck
+      parentName: Base CosmoWomanRibcage
+      position: {x: -0.0007859802, y: -0.003460698, z: -0.000000006646105}
+      rotation: {x: 9.28585e-15, y: -0.000000014916097, z: -0.08297728, w: 0.99655145}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Base CosmoWomanHead
+      parentName: Base CosmoWomanNeck
+      position: {x: -0.120294645, y: 0, z: 9.094947e-15}
+      rotation: {x: -1.4730784e-14, y: 0.000000014916097, z: 0.08297728, w: 0.99655145}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Base CosmoWomanRCollarbone
+      parentName: Base CosmoWomanRibcage
+      position: {x: 0.00800003, y: 0.0337158, z: -0.029180225}
+      rotation: {x: 0.022497332, y: -0.72098494, z: 0.09611119, w: 0.68588436}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Base CosmoWomanRUpperarm
+      parentName: Base CosmoWomanRCollarbone
+      position: {x: -0.13264105, y: 0.000000038146972, z: 0.00000015258789}
+      rotation: {x: 0.19234861, y: -0.019538129, z: -0.044576466, w: 0.980119}
+      scale: {x: 0.9999997, y: 1.0000001, z: 1.0000001}
+    - name: Base CosmoWomanRForearm
+      parentName: Base CosmoWomanRUpperarm
+      position: {x: -0.21561277, y: -0.000000076293944, z: 0}
+      rotation: {x: 0.07771933, y: 0.00036510627, z: -0.040200464, w: 0.99616444}
+      scale: {x: 1.0000004, y: 1, z: 1.0000002}
+    - name: Base CosmoWomanRPalm
+      parentName: Base CosmoWomanRForearm
+      position: {x: -0.18249147, y: 0, z: 0.000000076293944}
+      rotation: {x: 0.41284084, y: -0.017261958, z: 0.031065667, w: 0.9101096}
+      scale: {x: 0.99999976, y: 0.99999964, z: 1.0000002}
+    - name: Base CosmoWomanRDigit11 1
+      parentName: Base CosmoWomanRPalm
+      position: {x: -0.04965191, y: -0.010263672, z: -0.032958288}
+      rotation: {x: -0.63917387, y: -0.21559304, z: -0.22845833, w: 0.70198524}
+      scale: {x: 1, y: 0.99999994, z: 1.0000002}
+    - name: Base CosmoWomanRDigit12
+      parentName: Base CosmoWomanRDigit11 1
+      position: {x: -0.02854042, y: 0, z: 0.00000015258789}
+      rotation: {x: -0.000003159045, y: 0.0000022500744, z: 0.04080207, w: 0.9991673}
+      scale: {x: 0.99999887, y: 1.0000008, z: 1.0000007}
+    - name: Base CosmoWomanRDigit13
+      parentName: Base CosmoWomanRDigit12
+      position: {x: -0.028540459, y: -0.000000114440915, z: 0.00000022888183}
+      rotation: {x: -0.0000034797524, y: 0.0000053166336, z: 0.083272666, w: 0.99652684}
+      scale: {x: 1, y: 0.9999998, z: 1.0000007}
+    - name: Base CosmoWomanRDigit21
+      parentName: Base CosmoWomanRPalm
+      position: {x: -0.09824375, y: 0.007853546, z: -0.015940009}
+      rotation: {x: -0.0029294426, y: 0.030241523, z: 0.0088631995, w: 0.999499}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1}
+    - name: Base CosmoWomanRDigit22
+      parentName: Base CosmoWomanRDigit21
+      position: {x: -0.028540459, y: 0, z: 0.00000015258789}
+      rotation: {x: 0.00000093784126, y: 0.0000018961716, z: 0.04080865, w: 0.99916697}
+      scale: {x: 0.9999998, y: 1.0000005, z: 1.0000001}
+    - name: Base CosmoWomanRDigit23
+      parentName: Base CosmoWomanRDigit22
+      position: {x: -0.028540459, y: 0.00000015258789, z: 0.000000057220458}
+      rotation: {x: 0.0000011499216, y: 0.0000027465262, z: 0.083269514, w: 0.9965271}
+      scale: {x: 0.9999987, y: 1.0000017, z: 1}
+    - name: Base CosmoWomanRDigit31
+      parentName: Base CosmoWomanRPalm
+      position: {x: -0.092815205, y: 0.012229919, z: 0.000009479522}
+      rotation: {x: -0.004003672, y: 0.055188503, z: -0.0040349653, w: 0.99845976}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.99999994}
+    - name: Base CosmoWomanRDigit32
+      parentName: Base CosmoWomanRDigit31
+      position: {x: -0.031301804, y: 0, z: -0.000000057220458}
+      rotation: {x: 0.00086591655, y: -0.010678494, z: 0.03927963, w: 0.9991708}
+      scale: {x: 1.0000001, y: 1.0000005, z: 0.9999995}
+    - name: Base CosmoWomanRDigit33
+      parentName: Base CosmoWomanRDigit32
+      position: {x: -0.03130169, y: 0, z: 0.000000028610229}
+      rotation: {x: 0.0012767352, y: -0.015280039, z: 0.08315727, w: 0.9964185}
+      scale: {x: 1.0000001, y: 1.0000006, z: 0.9999995}
+    - name: Base CosmoWomanRDigit41
+      parentName: Base CosmoWomanRPalm
+      position: {x: -0.09421066, y: 0.0034373472, z: 0.01577629}
+      rotation: {x: -0.009341624, y: 0.069988616, z: -0.025213053, w: 0.99718535}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.99999994}
+    - name: Base CosmoWomanRDigit42
+      parentName: Base CosmoWomanRDigit41
+      position: {x: -0.028540459, y: 0, z: 0.00000012397766}
+      rotation: {x: -0.00136117, y: -0.0041640378, z: 0.040660117, w: 0.9991635}
+      scale: {x: 1.0000001, y: 1.0000006, z: 0.9999994}
+    - name: Base CosmoWomanRDigit43
+      parentName: Base CosmoWomanRDigit42
+      position: {x: -0.028540496, y: 0.00000015258789, z: 0.000000038146972}
+      rotation: {x: -0.0012024683, y: -0.005657705, z: 0.081791736, w: 0.9966327}
+      scale: {x: 0.99999887, y: 1.000002, z: 0.9999994}
+    - name: Base CosmoWomanRDigit51
+      parentName: Base CosmoWomanRPalm
+      position: {x: -0.083681144, y: 0, z: 0.031658124}
+      rotation: {x: -0.0035443285, y: 0.07072235, z: -0.029129257, w: 0.9970643}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Base CosmoWomanRDigit52
+      parentName: Base CosmoWomanRDigit51
+      position: {x: -0.028540459, y: 0, z: 0.00000012397766}
+      rotation: {x: 0.0000007643827, y: 0.0000010877844, z: 0.040804163, w: 0.99916714}
+      scale: {x: 1.0000004, y: 1.0000006, z: 0.9999993}
+    - name: Base CosmoWomanRDigit53
+      parentName: Base CosmoWomanRDigit52
+      position: {x: -0.028540496, y: -0.000000076293944, z: 0.000000038146972}
+      rotation: {x: 0.00000025293238, y: 0.000001950084, z: 0.08327039, w: 0.996527}
+      scale: {x: 1.0000002, y: 1.0000008, z: 0.99999934}
+    - name: Cosmo
+      parentName: CharacterTest(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Helmet
+      parentName: CharacterTest(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -207,7 +520,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2

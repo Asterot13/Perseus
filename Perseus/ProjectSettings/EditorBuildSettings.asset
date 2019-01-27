@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Perseus/Scenes/SplashScreen.unity
+    guid: 88323e88a236c9e4b97e20626806f4f5
+  - enabled: 1
+    path: Assets/Perseus/Scenes/MainMenu.unity
+    guid: 53a426036afde9647963c6328d247a40
   m_configObjects: {}

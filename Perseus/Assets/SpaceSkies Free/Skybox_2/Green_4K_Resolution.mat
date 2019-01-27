@@ -95,8 +95,13 @@ Material:
 <<<<<<< HEAD
     - _Rotation: 0.8624855
 =======
+<<<<<<< HEAD
     - _Rotation: 0.37128744
 >>>>>>> origin/creating_ship
+=======
+    - _Rotation: 0.6059899
+>>>>>>> creating_ship
+>>>>>>> origin/CharacterAnimation
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1

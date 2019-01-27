@@ -24,6 +24,7 @@ namespace Events
             eventInstances.Add(new EventInstance { eventType = EventType.Fire, fromPrc = fireFromPrc, toPrc = fireToPrc });
             eventInstances.Add(new EventInstance { eventType = EventType.Damage, fromPrc = damageFromPrc, toPrc = damageToPrc });
             eventInstances.Add(new EventInstance { eventType = EventType.Custom, fromPrc = customFromPrc, toPrc = customerToPrc });
+            InvokeRepeating("LaunchEvent", 10f, 300f);
         }
 
         private void LaunchEvent()
