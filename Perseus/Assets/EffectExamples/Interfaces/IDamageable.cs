@@ -11,4 +11,5 @@ public interface IDamageable {
     IEnumerator getDestroyed();
     IEnumerator wearOut();
     void takeDamage();
+    void getIgniting(float damage);
 }

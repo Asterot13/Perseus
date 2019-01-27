@@ -60,7 +60,7 @@ namespace Ship
             remainingTime = MAIN_TIME;
             currentDistance = MAIN_DISTANCE;
             normalRotation = transform.rotation;
-            FindObjectOfType<InGameUI>().gameObject.SetActive(true);
+            //FindObjectOfType<InGameUI>().gameObject.SetActive(true);
         }
 
         // Update is called once per frame

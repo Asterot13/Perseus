@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 4007490868737351037}
   - component: {fileID: 3121846611743757805}
   - component: {fileID: 6648072381087093147}
+  - component: {fileID: 5339690780600093056}
+  - component: {fileID: 57543857600819927}
   m_Layer: 0
   m_Name: Cooler
-  m_TagString: Untagged
+  m_TagString: InteractableObj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3539748772232104035}
-  m_LocalRotation: {x: 0.0000056847925, y: 0.7071068, z: 0.7071068, w: -0.0000056847925}
+  m_LocalRotation: {x: 0.0000060907787, y: 0.7071068, z: 0.7071068, w: -0.0000060907787}
   m_LocalPosition: {x: -59.283993, y: 58.96885, z: 105.11838}
   m_LocalScale: {x: 1.4726396, y: 1.4726387, z: 1.4726387}
   m_Children: []
@@ -77,3 +79,33 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &5339690780600093056
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3539748772232104035}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5227185, y: 0.56548506, z: 1.6344838}
+  m_Center: {x: 0.000001907347, y: 0.020671979, z: 0.81723875}
+--- !u!114 &57543857600819927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3539748772232104035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 891d3c67df6d15d41a79cebef556033e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAgent: {fileID: 0}
+  playerStats: {fileID: 0}
+  anim: {fileID: 0}
+  water: 20
+  coroutineTime: 3

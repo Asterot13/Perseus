@@ -22,7 +22,7 @@ namespace Ship
         private float health;
         public bool isBurning;
         private bool isEmittingRadiation;
-        private bool isFixed;
+        public bool isFixed;
         public bool isOnFire
         {
             get {  return isBurning; }
@@ -40,13 +40,36 @@ namespace Ship
             {
                 isEmittingRadiation = true;
                 isFixed = false;
-                //TODO: Enable particles and ui indicators
+                _break.SetActive(true);
+                _break.GetComponent<ParticleSystem>().Play();
             }
             else if(damage > 0)
             {
                 health -= damage;
-                //TODO: Enable particles and ui indicators
+                _break.SetActive(true);
+                _break.GetComponent<ParticleSystem>().Play();
             }
+
+            Debug.Log(gameObject.name + " сломался");
+        }
+
+        public void getIgniting(float damage)
+        {
+            if (health <= 50f)
+            {
+                isEmittingRadiation = true;
+                isFixed = false;
+                fire.SetActive(true);
+                fire.GetComponent<ParticleSystem>().Play();
+            }
+            else if (damage > 0)
+            {
+                health -= damage;
+                fire.SetActive(true);
+                fire.GetComponent<ParticleSystem>().Play();
+            }
+
+            Debug.Log(gameObject.name + " загорелся");
         }
 
         public IEnumerator getDestroyed()
@@ -56,6 +79,7 @@ namespace Ship
             yield return new WaitForSeconds(2f);
             FindObjectOfType<EventLaucher>().shipObjectsList.Remove(gameObject);
             Destroy(gameObject);
+            Debug.Log(gameObject.name + " взорвался");
         }
 
         public void getFixed(float fixingSkill)
@@ -63,10 +87,21 @@ namespace Ship
             if (max_health > health)
             {
                 health += fixingSkill;
-                isFixed = true;
             }
             else
+            {
                 print("Object is fixed"); //TODO: Display in UI
+                isFixed = true;
+            }
+
+            if (isFixed)
+            {
+                fire.GetComponent<ParticleSystem>().Stop();
+                fire.SetActive(false);
+                _break.GetComponent<ParticleSystem>().Stop();
+                _break.SetActive(false);
+
+            }
         }
 
         public void takeDamage()

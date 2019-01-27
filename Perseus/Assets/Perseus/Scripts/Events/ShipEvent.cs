@@ -8,6 +8,7 @@ public class ShipEvent : MonoBehaviour {
     {
         //TODO: Burn particle
         obj.isOnFire = true;
+        obj.getIgniting(25f);
     }
 
     public void damage(IDamageable obj)
