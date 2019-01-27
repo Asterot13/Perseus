@@ -31,8 +31,7 @@ namespace Ship
         private float max_speed;
         [SerializeField]
         private float max_radiationDefence;
-        [SerializeField]
-        private float normalRadiationLevel;
+        public float normalRadiationLevel;
 
         private float max_oxigenLevel;
         private float shipStrenght;
@@ -61,6 +60,7 @@ namespace Ship
             remainingTime = MAIN_TIME;
             currentDistance = MAIN_DISTANCE;
             normalRotation = transform.rotation;
+            //FindObjectOfType<InGameUI>().gameObject.SetActive(true);
         }
 
         // Update is called once per frame
@@ -84,6 +84,11 @@ namespace Ship
         private void showStats()
         {
             throw new NotImplementedException();
+        }
+
+        public void seeShipStats()
+        {
+            FindObjectOfType<InGameUI>().showShipStats();
         }
     }
 }

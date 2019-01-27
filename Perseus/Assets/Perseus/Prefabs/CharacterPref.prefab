@@ -1792,7 +1792,7 @@ MonoBehaviour:
   energy: 100
   stress: 0
   life: 100
-  reparingSkill: 0
+  reparingSkill: 10
   stepHunger: -0.05
   stepThirst: -0.1
   stepEnergy: -0.15

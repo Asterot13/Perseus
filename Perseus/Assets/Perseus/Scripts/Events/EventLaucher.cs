@@ -16,34 +16,36 @@ namespace Events
         public float customFromPrc;
         public float customerToPrc;
 
-        ShipEvent shipEvent;
+        public ShipEvent shipEvent;
         public List<GameObject> shipObjectsList;
 
         private void Start()
         {
             eventInstances.Add(new EventInstance { eventType = EventType.Fire, fromPrc = fireFromPrc, toPrc = fireToPrc });
             eventInstances.Add(new EventInstance { eventType = EventType.Damage, fromPrc = damageFromPrc, toPrc = damageToPrc });
-            eventInstances.Add(new EventInstance { eventType = EventType.Custom, fromPrc = customFromPrc, toPrc = customerToPrc });
-            InvokeRepeating("LaunchEvent", 10f, 300f);
+            //eventInstances.Add(new EventInstance { eventType = EventType.Custom, fromPrc = customFromPrc, toPrc = customerToPrc });
+            InvokeRepeating("LaunchEvent", 10f, 40f);
         }
 
         private void LaunchEvent()
         {
-            int eventPercentage = Random.Range(1, 100);
+            int eventPercentage = Random.Range(1, 46);
             EventInstance eventToLaunch = eventInstances.FirstOrDefault(e => e.fromPrc <= eventPercentage && e.toPrc >= eventPercentage);
 
             int objectIndex = Random.Range(0, shipObjectsList.Count);
 
             switch(eventToLaunch.eventType)
             {
-                case EventType.Custom:
-                    shipEvent.callCustomEvent(shipObjectsList[objectIndex]);
-                    break;
+                //case EventType.Custom:
+                //    shipEvent.callCustomEvent(shipObjectsList[objectIndex]);
+                //    break;
                 case EventType.Damage:
                     shipEvent.damage(shipObjectsList[objectIndex].GetComponent<IDamageable>());
+                    Debug.Log(objectIndex.ToString());
                     break;
                 case EventType.Fire:
                     shipEvent.ignite(shipObjectsList[objectIndex].GetComponent<IDamageable>());
+                    Debug.Log(objectIndex.ToString());
                     break;
             }
 

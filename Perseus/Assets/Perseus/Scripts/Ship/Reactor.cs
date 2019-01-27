@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Events;
 namespace Ship
 {
     public class Reactor : MonoBehaviour, IDamageable
@@ -22,12 +22,17 @@ namespace Ship
         private float health;
         public bool isBurning;
         private bool isEmittingRadiation;
-        private bool isFixed;
+        public bool isFixed;
         public bool isOnFire
         {
             get {  return isBurning; }
             set { isBurning = isOnFire;  }
         }
+
+
+        public GameObject explosion;
+        public GameObject fire;
+        public GameObject _break;
 
         public void getBroken(float damage = 0)
         {
@@ -35,18 +40,46 @@ namespace Ship
             {
                 isEmittingRadiation = true;
                 isFixed = false;
-                //TODO: Enable particles and ui indicators
+                _break.SetActive(true);
+                _break.GetComponent<ParticleSystem>().Play();
             }
             else if(damage > 0)
             {
                 health -= damage;
-                //TODO: Enable particles and ui indicators
+                _break.SetActive(true);
+                _break.GetComponent<ParticleSystem>().Play();
             }
+
+            Debug.Log(gameObject.name + " сломался");
         }
 
-        public void getDestroyed()
+        public void getIgniting(float damage)
         {
-            throw new System.NotImplementedException();
+            if (health <= 50f)
+            {
+                isEmittingRadiation = true;
+                isFixed = false;
+                fire.SetActive(true);
+                fire.GetComponent<ParticleSystem>().Play();
+            }
+            else if (damage > 0)
+            {
+                health -= damage;
+                fire.SetActive(true);
+                fire.GetComponent<ParticleSystem>().Play();
+            }
+
+            Debug.Log(gameObject.name + " загорелся");
+        }
+
+        public IEnumerator getDestroyed()
+        {
+            explosion.SetActive(true);
+            explosion.GetComponent<ParticleSystem>().Play();
+            yield return new WaitForSeconds(2f);
+            FindObjectOfType<EventLaucher>().shipObjectsList.Remove(gameObject);
+            Destroy(gameObject);
+            Debug.Log(gameObject.name + " взорвался");
         }
 
         public void getFixed(float fixingSkill)
@@ -54,10 +87,21 @@ namespace Ship
             if (max_health > health)
             {
                 health += fixingSkill;
-                isFixed = true;
             }
             else
+            {
                 print("Object is fixed"); //TODO: Display in UI
+                isFixed = true;
+            }
+
+            if (isFixed)
+            {
+                fire.GetComponent<ParticleSystem>().Stop();
+                fire.SetActive(false);
+                _break.GetComponent<ParticleSystem>().Stop();
+                _break.SetActive(false);
+
+            }
         }
 
         public void takeDamage()
@@ -107,6 +151,8 @@ namespace Ship
                 StartCoroutine(emitRadiation());
             if (isFixed && _ship.currentRadiationLevel > 0)
                 StartCoroutine(lowerRadiation());
+            if (health <= 0)
+                StartCoroutine(getDestroyed());
         }
     }
 }

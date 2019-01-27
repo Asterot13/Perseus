@@ -8,7 +8,8 @@ public interface IDamageable {
 
     void getBroken(float damage);
     void getFixed(float fixingSkill);
-    void getDestroyed();
+    IEnumerator getDestroyed();
     IEnumerator wearOut();
     void takeDamage();
+    void getIgniting(float damage);
 }
