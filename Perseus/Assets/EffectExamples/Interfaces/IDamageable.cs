@@ -4,9 +4,11 @@ using UnityEngine;
 
 public interface IDamageable {
 
-    void getBroken();
-    void getFixed();
+    bool isOnFire { get; set; }
+
+    void getBroken(float damage);
+    void getFixed(float fixingSkill);
     void getDestroyed();
-    void wearOut();
+    IEnumerator wearOut();
     void takeDamage();
 }

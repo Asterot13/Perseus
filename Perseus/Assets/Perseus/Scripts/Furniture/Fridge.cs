@@ -26,6 +26,7 @@ public class Fridge : Interactable {
         _anim.SetBool("IsEating", false);
         _stats.interact = false;
         InteractComplete(_stats);
+        isEating = true;
     }
 
     public override void InteractComplete(PersonStats stats)

@@ -46,7 +46,9 @@ public class Interactable : MonoBehaviour
     public virtual void InteractComplete(PersonStats stats)
     {
         hasInteracted = false;
+        playerStats.work = false;
         playerStats.interact = false;
         playerStats = null;
+        anim = null;
     }
 }

@@ -11,6 +11,8 @@ public class PersonStats : MonoBehaviour {
     public float stress;
     public float life;
 
+    public float reparingSkill;
+
     public float stepHunger;
     public float stepThirst;
     public float stepEnergy;

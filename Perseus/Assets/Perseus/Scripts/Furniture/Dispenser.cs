@@ -25,6 +25,7 @@ public class Dispenser : Interactable {
         _anim.SetBool("IsDrinking", false);
         _stats.interact = false;
         InteractComplete(_stats);
+        isDrinking = true;
     }
 
     public override void InteractComplete(PersonStats stats)

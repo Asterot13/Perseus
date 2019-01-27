@@ -26,6 +26,7 @@ public class MedicalKit : Interactable {
         _anim.SetBool("IsHealing", false);
         _stats.interact = false;
         InteractComplete(_stats);
+        isHealing = true;
     }
 
     public override void InteractComplete(PersonStats stats)
