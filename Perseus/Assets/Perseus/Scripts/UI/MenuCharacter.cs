@@ -4,9 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.EventSystems;
 
-public class MenuCharacter : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
+public class MenuCharacter : MonoBehaviour {
 
 
     public bool isSelected;
@@ -17,13 +16,7 @@ public class MenuCharacter : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public Sprite unselectedSprite;
     public string profileInfo;
     public Sprite inGameImage;
-
-    [SerializeField]
-    private GameObject profile;
-    [SerializeField]
-    private TextMeshProUGUI profileName;
-    [SerializeField]
-    private TextMeshProUGUI info;
+    public GameObject playerPref;
 
     public void Start()
     {
@@ -40,7 +33,7 @@ public class MenuCharacter : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         GetComponent<Button>().image.sprite = selectedSprite;
     }
 
-    public void OnPointerEnter(PointerEventData eventData)
+   /* public void OnPointerEnter(PointerEventData eventData)
     {
         profileName.text = name;
         info.text = profileInfo;
@@ -50,7 +43,7 @@ public class MenuCharacter : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public void OnPointerExit(PointerEventData eventData)
     {
         profile.SetActive(false);
-    }
+    }*/
 }
 
 
@@ -61,5 +54,5 @@ public enum specialization
     ENGINEER,
     CAPITAIN,
     PHYSIC,
-    GORDON
+    BIOLOG
 }
