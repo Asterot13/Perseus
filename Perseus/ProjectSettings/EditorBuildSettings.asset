@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Perseus/Scenes/MainMenu.unity
     guid: 53a426036afde9647963c6328d247a40
+  - enabled: 1
+    path: Assets/Perseus/Scenes/DevScenes/SpaceShip 1.unity
+    guid: 674d8b81d2db58f48b7ad1776129581e
   m_configObjects: {}

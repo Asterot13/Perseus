@@ -15,13 +15,13 @@ public class MainMenu : MonoBehaviour {
     public List<MenuCharacter> selectedCharacters = new List<MenuCharacter>();
     [SerializeField]
     private List<MenuCharacter> characters = new List<MenuCharacter>();
-
+    public InfoTransit InfoTransit;
 	// Use this for initialization
 	private void Awake () {
         mainSection.SetActive(true);
         characterSection.SetActive(false);
         startLevelButton.SetActive(false);
-        DontDestroyOnLoad(this);
+        DontDestroyOnLoad(this.gameObject);
     }
 	
 	// Update is called once per frame
@@ -56,6 +56,11 @@ public class MainMenu : MonoBehaviour {
 
     public void startLevel()
     {
+        foreach(MenuCharacter _char in selectedCharacters)
+        {
+            InfoTransit.charactersToScene.Add(new InfoDetails { name = _char.name, prefab = _char.playerPref, specialization = _char.specialization, sprite = _char.inGameImage });
+        }
+        //InfoTransit.charactersToScene = this.selectedCharacters;
         SceneManager.LoadScene("SpaceShip 1"); //TODO: ADD LEVEL
     }
 
